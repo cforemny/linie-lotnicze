@@ -13,6 +13,8 @@ public class MojAnalizer {
     {
         System.out.println("PrzetwarzaM LISTE bookingow....");
 
+        System.out.println("moja nowa linjka kodu");
+
 //        bookingList.get
 
     }
