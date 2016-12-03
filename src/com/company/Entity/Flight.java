@@ -12,4 +12,10 @@ public class Flight {
     private List<Passanger> passangerList;
 
     private int flightNumber;
+
+    public Flight(List<Segment> segmentList, List<Passanger> passangerList, int flightNumber) {
+        this.segmentList = segmentList;
+        this.passangerList = passangerList;
+        this.flightNumber = flightNumber;
+    }
 }

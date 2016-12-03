@@ -15,6 +15,9 @@ public class MojAnalizer {
 
         System.out.println("asdfasdfasdf");
 
+
+
+
 //        bookingList.get
 
     }
