@@ -11,9 +11,9 @@ public class MojAnalizer {
 
     public void analize(List<Booking> bookingList)
     {
-        System.out.println("PrzetwarzaM LISTE bookingow....");
-
         System.out.println("moja nowa linjka kodu");
+
+        System.out.println("asdfasdfasdf");
 
 //        bookingList.get
 
