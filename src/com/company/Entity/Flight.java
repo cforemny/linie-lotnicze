@@ -17,4 +17,16 @@ public class Flight {
         this.passangerList = passangerList;
         this.flightNumber = flightNumber;
     }
+
+    public List<Segment> getSegmentList() {
+        return segmentList;
+    }
+
+    public List<Passanger> getPassangerList() {
+        return passangerList;
+    }
+
+    public int getFlightNumber() {
+        return flightNumber;
+    }
 }

@@ -16,4 +16,20 @@ public class Segment {
         this.arrivalDay = arrivalDay;
         this.arrivalTime = arrivalTime;
     }
+
+    public String getDepartureCity() {
+        return departureCity;
+    }
+
+    public String getArrivalCity() {
+        return arrivalCity;
+    }
+
+    public String getArrivalDay() {
+        return arrivalDay;
+    }
+
+    public String getArrivalTime() {
+        return arrivalTime;
+    }
 }

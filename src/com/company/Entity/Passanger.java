@@ -16,4 +16,20 @@ public class Passanger {
         this.age = age;
         this.passangerType = passangerType;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSureName() {
+        return sureName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public Enum<PassangerType> getPassangerType() {
+        return passangerType;
+    }
 }
