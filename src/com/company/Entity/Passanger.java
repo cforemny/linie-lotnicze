@@ -9,4 +9,11 @@ public class Passanger {
     private String sureName;
     private int age;
     private Enum<PassangerType> passangerType;
+
+    public Passanger(String name, String sureName, int age, Enum<PassangerType> passangerType) {
+        this.name = name;
+        this.sureName = sureName;
+        this.age = age;
+        this.passangerType = passangerType;
+    }
 }
