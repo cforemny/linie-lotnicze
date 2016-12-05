@@ -9,4 +9,12 @@ public class Booking {
 
     private int bookingId;
     private List<Flight> flightList;
+
+    public List<Flight> createFlights(){
+
+
+
+
+       return null;
+    }
 }
