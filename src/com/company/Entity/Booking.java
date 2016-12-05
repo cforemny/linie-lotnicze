@@ -10,6 +10,7 @@ public class Booking {
     private int bookingId;
     private List<Flight> flightList;
 
+
     public Booking(int bookingId, List<Flight> flightList) {
         this.bookingId = bookingId;
         this.flightList = flightList;
