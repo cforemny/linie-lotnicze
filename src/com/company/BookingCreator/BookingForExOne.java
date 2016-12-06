@@ -15,34 +15,33 @@ import static com.company.Entity.PassangerType.INFANT;
  */
 public class BookingForExOne {
 
-    public List<Booking> createBookings() {
-// bedziemy chceli stworzyc liste Bookingow. Czyli najpierw trzeba stworzyc wszystkie rzeczy ktore znajduja sie wewnatrz Bookingu:\
-        // Flight -> Segment ->
+    public List<Booking> createBookings() {   //metoda tworzaca bookingList
 
-        Flight firstFlight = createFirstFlight();
+
+        Flight firstFlight = createFirstFlight();          // zmienna referencyjna typu Flight = wartosc zwrocona prze prywatna metode createFirstFlight();
         Flight secondFlight = createSecondFlight();
 
-        ArrayList<Flight> flightList = new ArrayList<>();
+        ArrayList<Flight> flightList = new ArrayList<>();  //zmienna referencyjna flighList typu Flight rezerwuje miejsce w pamieci na nowa Arrayliste
 
-        flightList.add(firstFlight);
+        flightList.add(firstFlight);                       // na arrayliscie na ktora wskauzje zmienna referencyjna flightList wywolujemy metode dodaj firstFlight
         flightList.add(secondFlight);
 
-        Booking firstBooking = new Booking(12, flightList);
+        Booking firstBooking = new Booking(12, flightList); // tworzymy zmienna referencyjna typu Booking, ktora pokazuje na obiekt zlozony z pol bookingId i utworzonej rpzed chwila flightListy
 
-        List<Booking> bookingList = new ArrayList<>();
-        bookingList.add(firstBooking);
+        List<Booking> bookingList = new ArrayList<>();  //kolejna zmienna referencyjna wskazujaca na arrayliste
+        bookingList.add(firstBooking);                   // wywolanie metody add na utworzonej linijke wyzej zmiennej referencyjnej
 
-        return bookingList;
+        return bookingList;                             // zwrocenie wartosci bookingList
     }
 
     private Flight createSecondFlight() {
-        Segment segment1 = new Segment("Gdansk", "Warszawa", "Wtorek", "10.30");
-        Segment segment2 = new Segment("Krakow", "Gdańsk", "DUUPAAAAA - zamiast dnia tygodnia", "15.00");
-        Segment segment3 = new Segment("Katowice", "Frankfurt", "Sroda", "Tez wielkaa duupa zamiast czasu");
+        Segment segment1 = new Segment("Gdansk", "Warszawa",ArrivalDay.PONIEDZIALEK,"10.30");
+        Segment segment2 = new Segment("Krakow", "Gdańsk", ArrivalDay.NIEDZIELA, "15.00");
+        Segment segment3 = new Segment("Katowice", "Frankfurt", ArrivalDay.CZWARTEK, "12.15");
 
-        ArrayList<Segment> segmentlist = new ArrayList<>();
+        ArrayList<Segment> segmentlist = new ArrayList<>(); // patyk do arraylisty
 
-        segmentlist.add(segment1);
+        segmentlist.add(segment1);                  //dodawanie elementu do arraylisty na ktora pokazuje patyk sementlist
         segmentlist.add(segment2);
         segmentlist.add(segment3);
 
@@ -63,9 +62,9 @@ public class BookingForExOne {
     }
 
     private Flight createFirstFlight() {
-        Segment segment1 = new Segment("Krakow", "Warszawa", "Poniedziałek", "10.30");
-        Segment segment2 = new Segment("Krakow", "Gdańsk", "Wtorek", "15.00");
-        Segment segment3 = new Segment("Katowice", "Frankfurt", "Sroda", "8.00");
+        Segment segment1 = new Segment("Krakow", "Warszawa", ArrivalDay.SOBOTA, "10.30");
+        Segment segment2 = new Segment("Krakow", "Gdańsk",ArrivalDay.SOBOTA, "15.00");
+        Segment segment3 = new Segment("Katowice", "Frankfurt",ArrivalDay.PONIEDZIALEK, "8.00");
 
         ArrayList<Segment> segmentlist = new ArrayList<>();
 

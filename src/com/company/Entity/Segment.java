@@ -7,10 +7,10 @@ public class Segment {
 
     private String departureCity;
     private String arrivalCity;
-    private String arrivalDay;
+    private Enum<ArrivalDay> arrivalDay;
     private String arrivalTime;
 
-    public Segment(String departureCity, String arrivalCity, String arrivalDay, String arrivalTime) {
+    public Segment(String departureCity, String arrivalCity, Enum<ArrivalDay> arrivalDay, String arrivalTime) {
         this.departureCity = departureCity;
         this.arrivalCity = arrivalCity;
         this.arrivalDay = arrivalDay;
@@ -25,9 +25,7 @@ public class Segment {
         return arrivalCity;
     }
 
-    public String getArrivalDay() {
-        return arrivalDay;
-    }
+    public Enum<ArrivalDay> getArrivalDay() {return arrivalDay;}
 
     public String getArrivalTime() {
         return arrivalTime;
