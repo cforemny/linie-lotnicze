@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.Analayzers.AnalizerByAge;
 import com.company.Analayzers.AnalizerByName;
 import com.company.Analayzers.MojAnalizer;
 import com.company.BookingCreator.BookingForExOne;
@@ -14,12 +15,14 @@ public class Main {
 
         MojAnalizer mojAnalizer = new MojAnalizer();
         AnalizerByName analizerByName = new AnalizerByName();
+        AnalizerByAge analizerByAge = new AnalizerByAge();
 
 
         List<Booking> bookings = new BookingForExOne().createBookings(); //tworze liste obiektow typu Bookings
 
-        mojAnalizer.analize(bookings);
-        analizerByName.analizeByName(bookings);
+        //mojAnalizer.analize(bookings);
+        //analizerByName.analizeByName(bookings);
+        analizerByAge.analizeByAge(bookings);
 
     }
 }

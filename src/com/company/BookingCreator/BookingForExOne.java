@@ -46,7 +46,7 @@ public class BookingForExOne {
         segmentlist.add(segment3);
 
         Passanger passanger1 = new Passanger("Michal", "Kowalski", 30, PassangerType.ADULT);
-        Passanger passanger2 = new Passanger("Monika", "Długosz", 30, PassangerType.ADULT);
+        Passanger passanger2 = new Passanger("Monika", "Długosz", 74, PassangerType.ADULT);
         Passanger passanger3 = new Passanger("Adam", "Mickiewicz", 7, PassangerType.CHILD);
         Passanger passanger4 = new Passanger("Bartek", "Sienkiewicz", 4, PassangerType.INFANT);
 
@@ -73,7 +73,7 @@ public class BookingForExOne {
         segmentlist.add(segment3);
 
         Passanger passanger1 = new Passanger("Adam", "Kowalski", 25, PassangerType.ADULT);
-        Passanger passanger2 = new Passanger("Monika", "Długosz", 30, PassangerType.ADULT);
+        Passanger passanger2 = new Passanger("Monika", "Długosz", 18, PassangerType.ADULT);
         Passanger passanger3 = new Passanger("Adam", "Mickiewicz", 7, PassangerType.CHILD);
         Passanger passanger4 = new Passanger("Bartek", "Sienkiewicz", 4, PassangerType.INFANT);
 
