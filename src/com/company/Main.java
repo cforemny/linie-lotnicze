@@ -25,7 +25,7 @@ public class Main {
         //mojAnalizer.analize(bookings);
         //analizerByName.analizeByName(bookings);
        //analizerByAge.analizeByAge(bookings);
-        
+        analizerByDestination.analizeByDestination(bookings);
 
     }
 }
