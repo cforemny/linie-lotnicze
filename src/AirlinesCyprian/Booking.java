@@ -9,6 +9,15 @@ public class Booking implements Seller {
     private List<Passanger> passanger;
     private int bookingId;
 
+    public Booking(List<Passanger> passanger, int bookingId) {
+        this.passanger = passanger;
+        this.bookingId = bookingId;
+    }
+
+    public List<Passanger> getPassanger() {
+        return passanger;
+    }
+
     @Override
     public void seller() {
 

@@ -11,11 +11,17 @@ public class BookingCreator {
 
 
     List<Segment> segmentList = createSegment();
+    List<Passanger> passangerList = createPassangers();
+
     public List<Booking> createBooking(){
 
-        List<Booking> bookingList = new ArrayList<>();
+        Booking firstBooking = new Booking(passangerList,220);
+        List<Booking> bookinList = new ArrayList<>();
 
-        return bookingList;
+        bookinList.add(firstBooking);
+
+
+        return bookinList;
     }
 
     public List<Segment> createSegment(){
@@ -42,14 +48,36 @@ public class BookingCreator {
 
     public List<Passanger> createPassangers(){
 
-        Passanger passanger1 = new Passanger(segmentList ,"Michal", "Kowalski", 30,PassangerTypes.INFANT);
-       // Passanger passanger2 = new Passanger(,"Monika", "Długosz", 74, PassangerType.ADULT);
-       // Passanger passanger3 = new Passanger(,"Adam", "Mickiewicz", 7, PassangerType.CHILD);
-       // Passanger passanger4 = new Passanger(,"Bartek", "Sienkiewicz", 4, PassangerType.INFANT);
-        return null;
+        Passanger passanger1 = new Passanger(segmentList ,"Michal", "Kowalski", 30,PassangerTypes.ADULT);
+        Passanger passanger2= new Passanger(segmentList ,"Michal", "Kowalski", 26,PassangerTypes.ADULT);
+        Passanger passanger3 = new Passanger(segmentList ,"Michal", "Kowalski", 19,PassangerTypes.ADULT);
+        Passanger passanger4 = new Passanger(segmentList ,"Michal", "Kowalski", 17,PassangerTypes.CHILD);
+        Passanger passanger5 = new Passanger(segmentList ,"Michal", "Kowalski", 16,PassangerTypes.CHILD);
+        Passanger passanger6 = new Passanger(segmentList ,"Michal", "Kowalski", 12,PassangerTypes.CHILD);
+        Passanger passanger7 = new Passanger(segmentList ,"Michal", "Kowalski", 1,PassangerTypes.INFANT);
+        Passanger passanger8 = new Passanger(segmentList ,"Michal", "Kowalski", 2,PassangerTypes.INFANT);
+        Passanger passanger9 = new Passanger(segmentList ,"Michal", "Kowalski", 56,PassangerTypes.ADULT);
+
+        List<Passanger> passangerList = new ArrayList<>();
+        passangerList.add(passanger1);
+        passangerList.add(passanger2);
+        passangerList.add(passanger3);
+        passangerList.add(passanger4);
+        passangerList.add(passanger5);
+        passangerList.add(passanger6);
+        passangerList.add(passanger7);
+        passangerList.add(passanger8);
+        passangerList.add(passanger9);
+
+        return passangerList;
     }
 
 
+    public List<Segment> getSegmentList() {
+        return segmentList;
+    }
 
-
+    public List<Passanger> getPassangerList() {
+        return passangerList;
+    }
 }

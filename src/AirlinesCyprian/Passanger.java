@@ -1,7 +1,5 @@
 package AirlinesCyprian;
 
-import com.company.Entity.PassangerType;
-
 import java.util.EmptyStackException;
 import java.util.List;
 
@@ -42,5 +40,5 @@ public class Passanger {
         return age;
     }
 
-    public Enum<PassangerTypes> getPassangerType() { return passangerTypes; }
+    public Enum<PassangerTypes> getPassangerTypes() { return passangerTypes; }
 }
