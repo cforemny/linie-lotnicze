@@ -9,6 +9,8 @@ import java.util.List;
  */
 public class BookingCreator {
 
+
+    List<Segment> segmentList = createSegment();
     public List<Booking> createBooking(){
 
         List<Booking> bookingList = new ArrayList<>();
@@ -40,7 +42,7 @@ public class BookingCreator {
 
     public List<Passanger> createPassangers(){
 
-        Passanger passanger1 = new Passanger(createSegment(),"Michal", "Kowalski", 30);
+        Passanger passanger1 = new Passanger(segmentList ,"Michal", "Kowalski", 30,PassangerTypes.INFANT);
        // Passanger passanger2 = new Passanger(,"Monika", "Długosz", 74, PassangerType.ADULT);
        // Passanger passanger3 = new Passanger(,"Adam", "Mickiewicz", 7, PassangerType.CHILD);
        // Passanger passanger4 = new Passanger(,"Bartek", "Sienkiewicz", 4, PassangerType.INFANT);

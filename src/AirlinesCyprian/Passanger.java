@@ -9,24 +9,25 @@ import java.util.List;
  * Created by Cyprian on 2016-12-09.
  */
 public class Passanger {
-    private List<Segment> segment;
+    private List<Segment> segmentList;
     private String name;
     private String lastName;
     private int age;
-    private Enum<PassangerType> passangerType;
+    private Enum<PassangerTypes> passangerTypes;
 
-    public Passanger(List<Segment> segment, String name, String lastName, int age, Enum<PassangerType> passangerType) {
-        this.segment = segment;
+    public Passanger(List<Segment> segmentList, String name, String lastName, int age, Enum<PassangerTypes> passangerTypes) {
+        this.segmentList = segmentList;
         this.name = name;
         this.lastName = lastName;
         this.age = age;
-        this.passangerType = passangerType;
+        this.passangerTypes = passangerTypes;
     }
 
 
 
-    public List<Segment> getSegment() {
-        return segment;
+
+    public List<Segment> getSegmentList() {
+        return segmentList;
     }
 
     public String getName() {
@@ -41,7 +42,5 @@ public class Passanger {
         return age;
     }
 
-    public Enum<PassangerType> getPassangerType() {
-        return passangerType;
-    }
+    public Enum<PassangerTypes> getPassangerType() { return passangerTypes; }
 }
