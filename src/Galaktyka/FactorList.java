@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by Cyprian on 2016-12-12.
  */
-public class FactorList {
+public class FactorList implements Orb {
 
     private List<Factor> factorList = new ArrayList<>();
 
@@ -36,6 +36,11 @@ public class FactorList {
         factorList.add(factor8);
 
         return this.factorList;
+
+    }
+
+    @Override
+    public void countMass() {
 
     }
 }

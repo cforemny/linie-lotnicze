@@ -16,7 +16,7 @@ public class AnalizerByDestination {
             for (Flight flight : booking.getFlightList()) {
                 for (Segment segment : flight.getSegmentList()) {
                     if(segment.getArrivalCity() == "Warszawa"){
-                        System.out.println(segment.getDepartureCity() + " " + segment.getArrivalCity() + " " + segment.getArrivalDay() + " " +segment.getArrivalTime() + " \n");
+                        System.out.println(segment.getDepartureCity() + " " + segment.getArrivalCity() + " " + segment.getArrivalDay() + " " +segment.getArrivalTime());
 
                     }
                     
