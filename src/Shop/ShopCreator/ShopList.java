@@ -10,12 +10,12 @@ import java.util.*;
 /**
  * Created by Cyprian on 2016-12-18.
  */
-public class ShopList  {
+public class ShopList implements Product  {
 
 
-   private List<Food> foodList = new ArrayList();
-   private List<Cloth> clothList = new ArrayList<>();
-   private List<Electronic> electronicList = new ArrayList<>();
+   private List<Food> foodList;
+   private List<Cloth> clothList;
+   private List<Electronic> electronicList;
 
     public ShopList(List<Food> foodList, List<Cloth> clothList, List<Electronic> electronicList) {
         this.foodList = foodList;
@@ -39,4 +39,8 @@ public class ShopList  {
     }
 
 
+    @Override
+    public void showProduct() {
+
+    }
 }

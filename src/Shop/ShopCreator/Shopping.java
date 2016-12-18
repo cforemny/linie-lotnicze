@@ -21,18 +21,22 @@ public class Shopping implements Product {
         ShopList electronicList = (ShopList) new ShopCreator().createShopList().getElectronicList();
         ShopList foodList = (ShopList) new ShopCreator().createShopList().getElectronicList();
 
-        ArrayList shoppingList = new ArrayList();
+        List shoppingList = new ArrayList();
 
         shoppingList.add(clothList);
         shoppingList.add(electronicList);
         shoppingList.add(foodList);
 
-        return shoppingList;
+        return this.shoppingList;
 
         }
 
     @Override
     public void showProduct() {
+
+
+
+
 
 
     }

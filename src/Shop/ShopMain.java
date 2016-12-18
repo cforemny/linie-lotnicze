@@ -9,6 +9,7 @@ import Shop.ShopProducts.Food;
 import Shop.ShopProducts.Product;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Cyprian on 2016-12-16.
@@ -16,12 +17,15 @@ import java.util.ArrayList;
 public class ShopMain {
     public static void main(String[] args) {
 
-        ShopList clothList = (ShopList) new ShopCreator().createShopList().getClothList();
-        
+        ShopCreator shopCreator = new ShopCreator();
+        ShopList shopList = shopCreator.createShopList();
+        List<Cloth> clothList1 = shopList.getClothList();
+
+        for (Cloth cloth : clothList1) {
+            System.out.println(cloth.getType() + " kosztuje " + cloth.getPrice());
+        }
 
 
-
-
-    }
+     }
 }
 
