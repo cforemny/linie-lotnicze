@@ -29,7 +29,7 @@ public class Main {
 
         List<AirlinesCyprian.Booking> bookings1 = new BookingCreator().createBooking();
         List<Booking> bookings = new BookingForExOne().createBookings(); //tworze liste obiektow typu Bookings
-        //mojAnalizer.analize(bookings);
+        mojAnalizer.analize(bookings);
         //analizerByName.analizeByName(bookings);
        //analizerByAge.analizeByAge(bookings);
        // analizerByDestination.analizeByDestination(bookings);
