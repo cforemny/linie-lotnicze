@@ -1,5 +1,10 @@
 package Shop.ShopProducts;
 
+import Shop.ShopCreator.ShopCreator;
+import Shop.ShopCreator.ShopList;
+
+import java.util.List;
+
 /**
  * Created by Cyprian on 2016-12-16.
  */
@@ -13,6 +18,9 @@ public class Electronic implements Product {
         this.type = type;
         this.guarantee = guarantee;
         this.price = price;
+    }
+
+    public Electronic() {
     }
 
     public String getType() {
@@ -30,5 +38,15 @@ public class Electronic implements Product {
     @Override
     public void showProduct() {
 
+        ShopCreator shopCreator = new ShopCreator();
+        ShopList shopList = shopCreator.createShopList();
+        List<Electronic> electronicList1 = shopList.getElectronicList();
+
+        for (Electronic electronic : electronicList1) {
+
+            System.out.println(electronic.getType() + " gwarancja " + electronic.isGuarantee() + " i kosztuje " + electronic.getPrice() + " zł");
+
+        }
+        System.out.println("\n");
     }
 }

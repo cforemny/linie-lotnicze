@@ -5,7 +5,7 @@ import Shop.ShopProducts.Electronic;
 import Shop.ShopProducts.Food;
 import Shop.ShopProducts.Product;
 
-import java.util.*;
+import java.util.List;
 
 /**
  * Created by Cyprian on 2016-12-18.
