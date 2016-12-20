@@ -3,14 +3,13 @@ package Shop.Customer;
 import Shop.ShopProducts.Cloth;
 import Shop.ShopProducts.Electronic;
 import Shop.ShopProducts.Food;
-import Shop.ShopProducts.Product;
 
 import java.util.List;
 
 /**
  * Created by Cyprian on 2016-12-18.
  */
-public class Customer implements Product {
+public class Customer {
 
     private List<Food> foodList;
     private List<Cloth> clothList;
@@ -37,19 +36,15 @@ public class Customer implements Product {
         return electronicList;
     }
 
-    @Override
+
     public void showProduct() {
-            System.out.println("Oto list produktów w naszym sklepie: \n");
-            Cloth cloth = new Cloth();
-            cloth.showProduct();
-            Food food = new Food();
-            food.showProduct();
-            Electronic electronic = new Electronic();
-            electronic.showProduct();
-
-
-
-
+        System.out.println("Oto list produktów w naszym sklepie: \n");
+        Cloth cloth = new Cloth();
+        cloth.showProduct();
+        Food food = new Food();
+        food.showProduct();
+        Electronic electronic = new Electronic();
+        electronic.showProduct();
 
 
     }

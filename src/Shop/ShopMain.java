@@ -2,7 +2,8 @@ package Shop;
 
 import Shop.Customer.Customer;
 import Shop.Customer.CustomerCreator;
-import Shop.ShopAnalizer.ShopAnalizer;
+import Shop.ShopAnalizer.CustomerAnalizer;
+import Shop.ShopAnalizer.ListAnalizer;
 
 import java.util.List;
 
@@ -13,12 +14,18 @@ public class ShopMain {
     public static void main(String[] args) {
 
         Customer customer = new Customer();
-        ShopAnalizer shopAnalizer = new ShopAnalizer();
+        CustomerAnalizer customerAnalizer = new CustomerAnalizer();
         List<Customer> customerList = new CustomerCreator().createCustomer();
+        ListAnalizer listAnalizer = new ListAnalizer();
 
-        shopAnalizer.ShowCustomersList(customerList);
+        listAnalizer.compareCustomerToShop(customerList);
 
+        // PROBLEM Z WYSWIETLENIEM OBIEKTOW, KTORE SA NA LISCIE KLIENTA, ALE NEIS A NA LISCIE SKLEPU.
+
+        //customerAnalizer.ShowCustomersList(customerList);
         //customer.showProduct();
+
+
 
 
     }
