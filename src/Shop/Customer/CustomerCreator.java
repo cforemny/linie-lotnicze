@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by Cyprian on 2016-12-19.
  */
-public class CustomerCreator {
+public class CustomerCreator implements Product {
 
     public List<Customer> createCustomer(){
 
@@ -55,6 +55,8 @@ public class CustomerCreator {
     }
 
 
+    @Override
+    public void showProduct() {
 
-
+    }
 }

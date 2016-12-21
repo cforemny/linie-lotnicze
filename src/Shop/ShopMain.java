@@ -4,6 +4,7 @@ import Shop.Customer.Customer;
 import Shop.Customer.CustomerCreator;
 import Shop.ShopAnalizer.CustomerAnalizer;
 import Shop.ShopAnalizer.ListAnalizer;
+import Shop.ShopAnalizer.ProductAnalizer;
 
 import java.util.List;
 
@@ -19,10 +20,10 @@ public class ShopMain {
         ListAnalizer listAnalizer = new ListAnalizer();
 
         listAnalizer.compareCustomerToShop(customerList);
+        ProductAnalizer productAnalizer = new ProductAnalizer();
+        productAnalizer.comapreProduct();
 
-        // PROBLEM Z WYSWIETLENIEM OBIEKTOW, KTORE SA NA LISCIE KLIENTA, ALE NEIS A NA LISCIE SKLEPU.
-
-      // customerAnalizer.ShowCustomersList(customerList);
+        // customerAnalizer.ShowCustomersList(customerList);
       // customer.showProduct();
 
 

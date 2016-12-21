@@ -3,13 +3,14 @@ package Shop.Customer;
 import Shop.ShopProducts.Cloth;
 import Shop.ShopProducts.Electronic;
 import Shop.ShopProducts.Food;
+import Shop.ShopProducts.Product;
 
 import java.util.List;
 
 /**
  * Created by Cyprian on 2016-12-18.
  */
-public class Customer {
+public class Customer implements Product {
 
     private List<Food> foodList;
     private List<Cloth> clothList;
