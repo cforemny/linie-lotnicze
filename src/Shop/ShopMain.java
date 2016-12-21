@@ -22,8 +22,8 @@ public class ShopMain {
 
         // PROBLEM Z WYSWIETLENIEM OBIEKTOW, KTORE SA NA LISCIE KLIENTA, ALE NEIS A NA LISCIE SKLEPU.
 
-        //customerAnalizer.ShowCustomersList(customerList);
-        //customer.showProduct();
+      // customerAnalizer.ShowCustomersList(customerList);
+      // customer.showProduct();
 
 
 
